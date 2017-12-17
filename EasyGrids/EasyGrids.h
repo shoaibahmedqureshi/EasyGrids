@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <EasyGrids/CustomGridView.h>
+#import <EasyGrids/ItemDetail.h>
+
 
 //! Project version number for EasyGrids.
 FOUNDATION_EXPORT double EasyGridsVersionNumber;

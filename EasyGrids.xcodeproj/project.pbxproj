@@ -10,6 +10,18 @@
 		0CF4B1021FDCE3B8003DFA2A /* EasyGrids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B0F81FDCE3B8003DFA2A /* EasyGrids.framework */; };
 		0CF4B1071FDCE3B8003DFA2A /* EasyGridsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4B1061FDCE3B8003DFA2A /* EasyGridsTests.m */; };
 		0CF4B1091FDCE3B8003DFA2A /* EasyGrids.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B0FB1FDCE3B8003DFA2A /* EasyGrids.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CF4B1141FDCE48D003DFA2A /* UtilitiesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4B1121FDCE48D003DFA2A /* UtilitiesHelper.m */; };
+		0CF4B1191FDCE49A003DFA2A /* CustomGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4B1151FDCE49A003DFA2A /* CustomGridView.m */; };
+		0CF4B11A1FDCE49A003DFA2A /* ItemDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4B1181FDCE49A003DFA2A /* ItemDetail.m */; };
+		0CF4B1231FDCE6B3003DFA2A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4B1221FDCE6B3003DFA2A /* MBProgressHUD.m */; };
+		0CF4B1251FDCE704003DFA2A /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B1211FDCE6AE003DFA2A /* MBProgressHUD.h */; };
+		0CF4B1261FDCE718003DFA2A /* CategoryCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B11D1FDCE4D2003DFA2A /* CategoryCollectionViewCell.h */; };
+		0CF4B1271FDCE71B003DFA2A /* CategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4B11E1FDCE4D2003DFA2A /* CategoryCollectionViewCell.m */; };
+		0CF4B1291FDCEBA0003DFA2A /* ItemDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B1161FDCE49A003DFA2A /* ItemDetail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CF4B21C1FDDC606003DFA2A /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF4B11C1FDCE4D2003DFA2A /* CategoryCollectionViewCell.xib */; };
+		0CF4B21D1FDDD062003DFA2A /* UtilitiesHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B1131FDCE48D003DFA2A /* UtilitiesHelper.h */; };
+		0CF4B21E1FDDD06F003DFA2A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CF4B0FC1FDCE3B8003DFA2A /* Info.plist */; };
+		0CF4B2201FDDD131003DFA2A /* CustomGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B1171FDCE49A003DFA2A /* CustomGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +41,17 @@
 		0CF4B1011FDCE3B8003DFA2A /* EasyGridsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyGridsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF4B1061FDCE3B8003DFA2A /* EasyGridsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyGridsTests.m; sourceTree = "<group>"; };
 		0CF4B1081FDCE3B8003DFA2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CF4B1121FDCE48D003DFA2A /* UtilitiesHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtilitiesHelper.m; sourceTree = "<group>"; };
+		0CF4B1131FDCE48D003DFA2A /* UtilitiesHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilitiesHelper.h; sourceTree = "<group>"; };
+		0CF4B1151FDCE49A003DFA2A /* CustomGridView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomGridView.m; sourceTree = "<group>"; };
+		0CF4B1161FDCE49A003DFA2A /* ItemDetail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemDetail.h; sourceTree = "<group>"; };
+		0CF4B1171FDCE49A003DFA2A /* CustomGridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomGridView.h; sourceTree = "<group>"; };
+		0CF4B1181FDCE49A003DFA2A /* ItemDetail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemDetail.m; sourceTree = "<group>"; };
+		0CF4B11C1FDCE4D2003DFA2A /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		0CF4B11D1FDCE4D2003DFA2A /* CategoryCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryCollectionViewCell.h; sourceTree = "<group>"; };
+		0CF4B11E1FDCE4D2003DFA2A /* CategoryCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryCollectionViewCell.m; sourceTree = "<group>"; };
+		0CF4B1211FDCE6AE003DFA2A /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0CF4B1221FDCE6B3003DFA2A /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +94,14 @@
 		0CF4B0FA1FDCE3B8003DFA2A /* EasyGrids */ = {
 			isa = PBXGroup;
 			children = (
+				0CF4B1241FDCE6EA003DFA2A /* MBProgressHUD */,
+				0CF4B11B1FDCE4AE003DFA2A /* CategoryCells */,
+				0CF4B1131FDCE48D003DFA2A /* UtilitiesHelper.h */,
+				0CF4B1121FDCE48D003DFA2A /* UtilitiesHelper.m */,
+				0CF4B1171FDCE49A003DFA2A /* CustomGridView.h */,
+				0CF4B1151FDCE49A003DFA2A /* CustomGridView.m */,
+				0CF4B1161FDCE49A003DFA2A /* ItemDetail.h */,
+				0CF4B1181FDCE49A003DFA2A /* ItemDetail.m */,
 				0CF4B0FB1FDCE3B8003DFA2A /* EasyGrids.h */,
 				0CF4B0FC1FDCE3B8003DFA2A /* Info.plist */,
 			);
@@ -86,6 +117,25 @@
 			path = EasyGridsTests;
 			sourceTree = "<group>";
 		};
+		0CF4B11B1FDCE4AE003DFA2A /* CategoryCells */ = {
+			isa = PBXGroup;
+			children = (
+				0CF4B11D1FDCE4D2003DFA2A /* CategoryCollectionViewCell.h */,
+				0CF4B11E1FDCE4D2003DFA2A /* CategoryCollectionViewCell.m */,
+				0CF4B11C1FDCE4D2003DFA2A /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCells;
+			sourceTree = "<group>";
+		};
+		0CF4B1241FDCE6EA003DFA2A /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0CF4B1211FDCE6AE003DFA2A /* MBProgressHUD.h */,
+				0CF4B1221FDCE6B3003DFA2A /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +143,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF4B1251FDCE704003DFA2A /* MBProgressHUD.h in Headers */,
+				0CF4B2201FDDD131003DFA2A /* CustomGridView.h in Headers */,
+				0CF4B1291FDCEBA0003DFA2A /* ItemDetail.h in Headers */,
 				0CF4B1091FDCE3B8003DFA2A /* EasyGrids.h in Headers */,
+				0CF4B1261FDCE718003DFA2A /* CategoryCollectionViewCell.h in Headers */,
+				0CF4B21D1FDDD062003DFA2A /* UtilitiesHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +233,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF4B21E1FDDD06F003DFA2A /* Info.plist in Resources */,
+				0CF4B21C1FDDC606003DFA2A /* CategoryCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +252,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF4B1271FDCE71B003DFA2A /* CategoryCollectionViewCell.m in Sources */,
+				0CF4B11A1FDCE49A003DFA2A /* ItemDetail.m in Sources */,
+				0CF4B1141FDCE48D003DFA2A /* UtilitiesHelper.m in Sources */,
+				0CF4B1191FDCE49A003DFA2A /* CustomGridView.m in Sources */,
+				0CF4B1231FDCE6B3003DFA2A /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,12 +398,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = /Users/shoaibahmedqureshi/Desktop/EasyGrids;
 				INFOPLIST_FILE = EasyGrids/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shoaib.EasyCollections.EasyGrids;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = /Users/shoaibahmedqureshi/Desktop/EasyGrids;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -355,12 +419,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = /Users/shoaibahmedqureshi/Desktop/EasyGrids;
 				INFOPLIST_FILE = EasyGrids/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shoaib.EasyCollections.EasyGrids;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = /Users/shoaibahmedqureshi/Desktop/EasyGrids;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
