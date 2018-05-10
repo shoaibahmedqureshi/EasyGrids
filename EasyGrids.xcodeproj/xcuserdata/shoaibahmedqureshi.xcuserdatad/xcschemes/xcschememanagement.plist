@@ -4,10 +4,23 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>EasyGrids.xcscheme</key>
+		<key>EasyGrids.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0CF4B0F71FDCE3B8003DFA2A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0CF4B1001FDCE3B8003DFA2A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

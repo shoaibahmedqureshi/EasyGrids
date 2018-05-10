@@ -14,14 +14,14 @@
 		0CF4B1191FDCE49A003DFA2A /* CustomGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4B1151FDCE49A003DFA2A /* CustomGridView.m */; };
 		0CF4B11A1FDCE49A003DFA2A /* ItemDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4B1181FDCE49A003DFA2A /* ItemDetail.m */; };
 		0CF4B1231FDCE6B3003DFA2A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4B1221FDCE6B3003DFA2A /* MBProgressHUD.m */; };
-		0CF4B1251FDCE704003DFA2A /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B1211FDCE6AE003DFA2A /* MBProgressHUD.h */; };
-		0CF4B1261FDCE718003DFA2A /* CategoryCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B11D1FDCE4D2003DFA2A /* CategoryCollectionViewCell.h */; };
 		0CF4B1271FDCE71B003DFA2A /* CategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4B11E1FDCE4D2003DFA2A /* CategoryCollectionViewCell.m */; };
 		0CF4B1291FDCEBA0003DFA2A /* ItemDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B1161FDCE49A003DFA2A /* ItemDetail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CF4B21C1FDDC606003DFA2A /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF4B11C1FDCE4D2003DFA2A /* CategoryCollectionViewCell.xib */; };
-		0CF4B21D1FDDD062003DFA2A /* UtilitiesHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B1131FDCE48D003DFA2A /* UtilitiesHelper.h */; };
 		0CF4B21E1FDDD06F003DFA2A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CF4B0FC1FDCE3B8003DFA2A /* Info.plist */; };
 		0CF4B2201FDDD131003DFA2A /* CustomGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B1171FDCE49A003DFA2A /* CustomGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CF8D90720A011B700382FC4 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B1211FDCE6AE003DFA2A /* MBProgressHUD.h */; };
+		0CF8D90820A011CA00382FC4 /* UtilitiesHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B1131FDCE48D003DFA2A /* UtilitiesHelper.h */; };
+		0CF8D90920A011D000382FC4 /* CategoryCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B11D1FDCE4D2003DFA2A /* CategoryCollectionViewCell.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,12 +143,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CF4B1251FDCE704003DFA2A /* MBProgressHUD.h in Headers */,
 				0CF4B2201FDDD131003DFA2A /* CustomGridView.h in Headers */,
 				0CF4B1291FDCEBA0003DFA2A /* ItemDetail.h in Headers */,
 				0CF4B1091FDCE3B8003DFA2A /* EasyGrids.h in Headers */,
-				0CF4B1261FDCE718003DFA2A /* CategoryCollectionViewCell.h in Headers */,
-				0CF4B21D1FDDD062003DFA2A /* UtilitiesHelper.h in Headers */,
+				0CF8D90920A011D000382FC4 /* CategoryCollectionViewCell.h in Headers */,
+				0CF8D90820A011CA00382FC4 /* UtilitiesHelper.h in Headers */,
+				0CF8D90720A011B700382FC4 /* MBProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +435,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = EasyGridsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shoaib.EasyCollections.EasyGridsTests;
@@ -447,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = EasyGridsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shoaib.EasyCollections.EasyGridsTests;
