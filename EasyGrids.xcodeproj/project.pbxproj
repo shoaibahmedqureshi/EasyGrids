@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CF4B1021FDCE3B8003DFA2A /* EasyGrids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B0F81FDCE3B8003DFA2A /* EasyGrids.framework */; };
+		0CF4B1021FDCE3B8003DFA2A /* EasyGrids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4B0F81FDCE3B8003DFA2A /* EasyGrids.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0CF4B1071FDCE3B8003DFA2A /* EasyGridsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4B1061FDCE3B8003DFA2A /* EasyGridsTests.m */; };
 		0CF4B1091FDCE3B8003DFA2A /* EasyGrids.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B0FB1FDCE3B8003DFA2A /* EasyGrids.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CF4B1141FDCE48D003DFA2A /* UtilitiesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4B1121FDCE48D003DFA2A /* UtilitiesHelper.m */; };
