@@ -476,8 +476,7 @@
 +(void)removeActivityIndicatorToView:(UIView*)view{
    __block UIActivityIndicatorView* indicator;
     __weak __typeof(UIView*)weakView=view;
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         @try {
             if([weakView subviews].count>0){
                 for(UIView* tmpView in [weakView subviews]){
