@@ -70,7 +70,7 @@
                       
                        
                        //This is your completion handler
-                       dispatch_sync(dispatch_get_main_queue(), ^{
+                       dispatch_async(dispatch_get_main_queue(), ^{
                            //If self.image is atomic (not declared with nonatomic)
                            // you could have set it directly above
                            UIImage *image  = [UIImage imageWithData:imageData];

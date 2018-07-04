@@ -42,8 +42,6 @@
 + (id)shareUtitlities;
 + (id)getUserDefaultForKey:(NSString*)key;
 + (void)setUserDefaultForKey:(NSString*)key  value:(NSString*)value;
-//+(void)showLoader:(NSString *)title forView:(UIView *)view  setMode:(MBProgressHUDMode)mode delegate:(id)vwDelegate;
-//+(void)showLMAlertforTitle:(NSString *)title withMessage:(NSString *)message forDelegate:(id)deleg;
 +(void)showPromptAlertforTitle:(NSString *)title withMessage:(NSString *)message forDelegate:(id)deleg;
 +(BOOL) validateEmail:(NSString *)checkEmail;
 +(BOOL)validateURL:(NSString *)checkURL;
