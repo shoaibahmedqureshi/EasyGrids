@@ -1,9 +1,8 @@
 //
 //  CategoryCollectionViewCell.m
-//  StrictlySelfies
 //
-//  Created by Ali Akbar on 08/10/2015.
-//  Copyright (c) 2015 Ali Akbar. All rights reserved.
+//  Created by Shoaib Ahmed Qureshi on 6/2/14.
+//
 //
 
 #import "CategoryCollectionViewCell.h"
@@ -31,8 +30,10 @@
         else {
             NSLog(@"image is manual");
             UIImage *image = [[UIImage alloc] init];
-            image = [UIImage imageNamed:feed.imageName];
-            _feedImage.image = image;
+            if ([feed.imageName length] == 0 || [feed.imageName isKindOfClass: [NSNull class]]) {
+                image = [UIImage imageNamed:feed.imageName];
+                _feedImage.image = image;
+            }
         }
   
     
