@@ -17,14 +17,12 @@
 
 -(void)setData:(ItemDetail*)feed{
    
-    dispatch_async(dispatch_get_main_queue(), ^{
-      [UtilitiesHelper addActivityIndicatorToView:_feedImage];
-    });
+   
     
-    if (feed.imageUrl != nil) {
-          UIImage *image = [[UIImage alloc] init];
-          image = [UIImage imageNamed:feed.imageName];
-          _feedImage.image = image;
+    if ([feed.imageUrl length] != 0 || ![feed.imageUrl isKindOfClass: [NSNull class]]) {
+          dispatch_async(dispatch_get_main_queue(), ^{
+             [UtilitiesHelper addActivityIndicatorToView:_feedImage];
+          });
           [self getImageView:_feedImage ItemDetail:feed];
         }
         else {
