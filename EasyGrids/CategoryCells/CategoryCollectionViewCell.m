@@ -27,9 +27,9 @@
         }
         else {
             NSLog(@"image is manual");
-            UIImage *image = [[UIImage alloc] init];
-            if ([feed.imageName length] == 0 || [feed.imageName isKindOfClass: [NSNull class]]) {
-                image = [UIImage imageNamed:feed.imageName];
+            if ([feed.imageName length] == 0 || [feed.imageName isKindOfClass: [NSNull class]]){
+                NSLog(@"image name is %@",feed.imageName);
+                UIImage *image = [UIImage imageNamed:feed.imageName];
                 _feedImage.image = image;
             }
         }
