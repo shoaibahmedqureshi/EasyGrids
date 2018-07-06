@@ -84,6 +84,3 @@ class ViewController: UIViewController , CustomGridViewDelegate {
         galleryView.reloadGrid()
         
     }
-    
-
-In the course of development you will be making your own types that must comform to the `Equatable` protocol as above. Each data item must be **uniquely idenfyiable** so be careful when creating cells that can have duplicate display values as for example a ["Scrabble"](https://en.wikipedia.org/wiki/Scrabble) type game where the same letter appears more than once. In cases like these, a simple identifier will do to implement the equality.
