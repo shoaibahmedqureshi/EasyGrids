@@ -19,7 +19,7 @@
    
    
     
-    if ([feed.imageUrl length] != 0 || ![feed.imageUrl isKindOfClass: [NSNull class]]) {
+    if ([feed.imageUrl length] != 0 && ![feed.imageUrl isKindOfClass: [NSNull class]]) {
           dispatch_async(dispatch_get_main_queue(), ^{
              [UtilitiesHelper addActivityIndicatorToView:_feedImage];
           });
@@ -27,7 +27,8 @@
         }
         else {
             NSLog(@"image is manual");
-            if ([feed.imageName length] == 0 || [feed.imageName isKindOfClass: [NSNull class]]){
+            NSLog(@"image name is %@",feed.imageName);
+            if ([feed.imageName length] != 0 && ![feed.imageName isKindOfClass: [NSNull class]]){
                 NSLog(@"image name is %@",feed.imageName);
                 UIImage *image = [UIImage imageNamed:feed.imageName];
                 _feedImage.image = image;
