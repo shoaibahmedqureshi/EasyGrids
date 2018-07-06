@@ -1,7 +1,7 @@
 # EasyGrids
 This is a custom control to create photo collections or grids easy.
 
-Written for Objective C and can be integrated in projects written in any version of swift.
+Written for Objective C and can be integrated in projects written in any version swift above 2.0.
 
 [![Platform](https://img.shields.io/cocoapods/p/GTToast.svg?style=flat)](https://swift.org)
 [![Licence](https://img.shields.io/dub/l/vibe-d.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
