@@ -1,9 +1,8 @@
 //
 //  CategoryCollectionViewCell.m
-//  StrictlySelfies
 //
-//  Created by Ali Akbar on 08/10/2015.
-//  Copyright (c) 2015 Ali Akbar. All rights reserved.
+//  Created by Shoaib Ahmed Qureshi on 6/2/14.
+//
 //
 
 #import "CategoryCollectionViewCell.h"
@@ -18,21 +17,22 @@
 
 -(void)setData:(ItemDetail*)feed{
    
-    dispatch_async(dispatch_get_main_queue(), ^{
-      [UtilitiesHelper addActivityIndicatorToView:_feedImage];
-    });
+   
     
-    if (feed.imageUrl != nil) {
-          UIImage *image = [[UIImage alloc] init];
-          image = [UIImage imageNamed:feed.imageName];
-          _feedImage.image = image;
+    if ([feed.imageUrl length] != 0 && ![feed.imageUrl isKindOfClass: [NSNull class]]) {
+          dispatch_async(dispatch_get_main_queue(), ^{
+             [UtilitiesHelper addActivityIndicatorToView:_feedImage];
+          });
           [self getImageView:_feedImage ItemDetail:feed];
         }
         else {
             NSLog(@"image is manual");
-            UIImage *image = [[UIImage alloc] init];
-            image = [UIImage imageNamed:feed.imageName];
-            _feedImage.image = image;
+            NSLog(@"image name is %@",feed.imageName);
+            if ([feed.imageName length] != 0 && ![feed.imageName isKindOfClass: [NSNull class]]){
+                NSLog(@"image name is %@",feed.imageName);
+                UIImage *image = [UIImage imageNamed:feed.imageName];
+                _feedImage.image = image;
+            }
         }
   
     
@@ -70,7 +70,7 @@
                       
                        
                        //This is your completion handler
-                       dispatch_sync(dispatch_get_main_queue(), ^{
+                       dispatch_async(dispatch_get_main_queue(), ^{
                            //If self.image is atomic (not declared with nonatomic)
                            // you could have set it directly above
                            UIImage *image  = [UIImage imageWithData:imageData];
