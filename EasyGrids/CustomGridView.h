@@ -23,6 +23,11 @@ typedef enum{
     MEDIACELL,
 }CellType;
 
+typedef enum{
+    SINGLE,
+    MULTIPLE,
+}CellSelectionType;
+
 #import <UIKit/UIKit.h>
 
 @interface CustomGridView :  UICollectionView<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -39,7 +44,15 @@ typedef enum{
 
 @property(nonatomic,retain) UIColor* colorTitleLabelBg;
 
+@property(nonatomic,retain) UIColor* colorCellBorder;
+
+@property(nonatomic,retain) UIColor* colorSelectedCellBorder;
+
 @property(nonatomic,retain) UIColor* colorTitleLabelText;
+
+@property(nonatomic) float  cellBorderWidth;
+
+@property(nonatomic) float selectedCellBorderWidth;
 
 @property(nonatomic,retain) NSString* nibName;
 
@@ -47,6 +60,7 @@ typedef enum{
 
 @property(nonatomic) BOOL isDestinationCell;
 
+@property(nonatomic) CellSelectionType cellSelectionType;
 
 @property(nonatomic) CellType cellType;
 

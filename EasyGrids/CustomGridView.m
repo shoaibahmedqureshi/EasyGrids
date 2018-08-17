@@ -14,6 +14,16 @@
 
 @implementation CustomGridView
 
+-(id)init {
+    _cellBorderWidth = 0;
+    _selectedCellBorderWidth = 0;
+    _colorCellBorder = UIColor.clearColor;
+    _colorSelectedCellBorder = UIColor.clearColor;
+    
+    return self;
+}
+
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -28,6 +38,14 @@
 {
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc] init];
     _nibName = @"CategoryCollectionViewCell";
+    
+    if (self.cellSelectionType == SINGLE) {
+       [self setAllowsMultipleSelection:NO];
+    }
+    else {
+        [self setAllowsMultipleSelection:YES];
+    }
+    
     [layout setScrollDirection:scrollDirection];
     if(APPC_IS_IPAD){
         layout.minimumLineSpacing = 3.0f;
@@ -106,6 +124,15 @@
         //
         CategoryCollectionViewCell *cell = (CategoryCollectionViewCell *)[collectionView
                                                                                 dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+       if (cell.isSelected) {
+           [cell.layer setBorderWidth:_selectedCellBorderWidth];
+           [cell.layer setBorderColor:_colorSelectedCellBorder.CGColor];
+       }
+       else {
+           [cell.layer setBorderWidth:_cellBorderWidth];
+           [cell.layer setBorderColor:_colorCellBorder.CGColor];
+       }
         
 //        GridEntity* gridDataObject=[self.arrayGridObjects objectAtIndex:indexPath.row];
 //
@@ -163,7 +190,14 @@
 }*/
 
 
-
+-(void) collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    CategoryCollectionViewCell *cell = (CategoryCollectionViewCell*) [collectionView cellForItemAtIndexPath:indexPath];
+    [cell.layer setBorderWidth:_cellBorderWidth];
+    [cell.layer setBorderColor:_colorCellBorder.CGColor];
+    
+    
+}
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     if([self.customGridViewDelegate respondsToSelector:@selector(didSelectRowAtIndexPath:)])
@@ -171,6 +205,12 @@
     
     if([self.customGridViewDelegate respondsToSelector:@selector(didSelectRowAtIndexPath:object:)])
         [self.customGridViewDelegate didSelectRowAtIndexPath:indexPath object:self];
+    
+    CategoryCollectionViewCell *cell = (CategoryCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
+    [cell.layer setBorderWidth:_selectedCellBorderWidth];
+    [cell.layer setBorderColor:_colorSelectedCellBorder.CGColor];
+    
+    
 }
 
 
