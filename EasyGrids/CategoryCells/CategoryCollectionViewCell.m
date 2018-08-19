@@ -16,9 +16,6 @@
 }
 
 -(void)setData:(ItemDetail*)feed{
-   
-   
-    
     if ([feed.imageUrl length] != 0 && ![feed.imageUrl isKindOfClass: [NSNull class]]) {
           dispatch_async(dispatch_get_main_queue(), ^{
              [UtilitiesHelper addActivityIndicatorToView:_feedImage];
