@@ -121,7 +121,6 @@
         [collectionView registerClass:[CategoryCollectionViewCell class]
            forCellWithReuseIdentifier:CellIdentifier];
         [collectionView registerNib:[UINib nibWithNibName:_nibName bundle:bundle] forCellWithReuseIdentifier:CellIdentifier];
-        //
         CategoryCollectionViewCell *cell = (CategoryCollectionViewCell *)[collectionView
                                                                                 dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     
