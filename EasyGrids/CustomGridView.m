@@ -15,11 +15,7 @@
 @implementation CustomGridView
 
 -(id)init {
-    _cellBorderWidth = 2.0;
-    _selectedCellBorderWidth = 2.0;
-    _colorCellBorder = UIColor.blueColor;
-    _colorSelectedCellBorder = UIColor.redColor;
-    
+  
     return self;
 }
 
@@ -34,12 +30,18 @@
 }
 
 
-- (id)initWithFrame:(CGRect)frame andScrollDirection:(UICollectionViewScrollDirection)scrollDirection
+- (id)initWithFrame:(CGRect)frame andScrollDirection:(UICollectionViewScrollDirection)scrollDirection selectionType:(CellSelectionType)selectionType
 {
+    _cellBorderWidth = 2.0;
+    _selectedCellBorderWidth = 2.0;
+    _colorCellBorder = UIColor.blueColor;
+    _colorSelectedCellBorder = UIColor.redColor;
+    
+    
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc] init];
     _nibName = @"CategoryCollectionViewCell";
     
-    if (self.cellSelectionType == SINGLE) {
+    if (selectionType == SINGLE) {
        [self setAllowsMultipleSelection:NO];
     }
     else {
