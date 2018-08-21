@@ -64,7 +64,7 @@ typedef enum{
 
 @property(nonatomic) CellType cellType;
 
-- (id)initWithFrame:(CGRect)frame andScrollDirection:(UICollectionViewScrollDirection)scrollDirection selectionType:(CellSelectionType)selectionType;
+- (id)initWithFrame:(CGRect)frame andScrollDirection:(UICollectionViewScrollDirection)scrollDirection;
 
 -(void)reloadCustomGridViewData;
 

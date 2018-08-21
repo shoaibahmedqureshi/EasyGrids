@@ -30,7 +30,7 @@
 }
 
 
-- (id)initWithFrame:(CGRect)frame andScrollDirection:(UICollectionViewScrollDirection)scrollDirection selectionType:(CellSelectionType)selectionType
+- (id)initWithFrame:(CGRect)frame andScrollDirection:(UICollectionViewScrollDirection)scrollDirection
 {
     _cellBorderWidth = 2.0;
     _selectedCellBorderWidth = 2.0;
@@ -41,7 +41,7 @@
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc] init];
     _nibName = @"CategoryCollectionViewCell";
     
-    if (selectionType == SINGLE) {
+    if (self.cellSelectionType == SINGLE) {
        [self setAllowsMultipleSelection:NO];
     }
     else {
