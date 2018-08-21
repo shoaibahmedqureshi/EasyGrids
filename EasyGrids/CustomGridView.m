@@ -15,10 +15,10 @@
 @implementation CustomGridView
 
 -(id)init {
-    _cellBorderWidth = 0;
-    _selectedCellBorderWidth = 0;
-    _colorCellBorder = UIColor.clearColor;
-    _colorSelectedCellBorder = UIColor.clearColor;
+    _cellBorderWidth = 2.0;
+    _selectedCellBorderWidth = 2.0;
+    _colorCellBorder = UIColor.blueColor;
+    _colorSelectedCellBorder = UIColor.redColor;
     
     return self;
 }
