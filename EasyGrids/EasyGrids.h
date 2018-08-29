@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <EasyGrids/CustomGridView.h>
-#import <EasyGrids/ItemDetail.h>
+#import "CustomGridView.h"
+#import "ItemDetail.h"
 
 
 //! Project version number for EasyGrids.

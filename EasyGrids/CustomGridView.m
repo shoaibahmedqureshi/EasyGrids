@@ -30,18 +30,18 @@
 }
 
 
-- (id)initWithFrame:(CGRect)frame andScrollDirection:(UICollectionViewScrollDirection)scrollDirection
+- (id)initWithFrame:(CGRect)frame andScrollDirection:(UICollectionViewScrollDirection)scrollDirection selectionType:(CellSelectionType)selectionType
 {
-    _cellBorderWidth = 2.0;
-    _selectedCellBorderWidth = 2.0;
-    _colorCellBorder = UIColor.blueColor;
-    _colorSelectedCellBorder = UIColor.redColor;
+    _cellBorderWidth = 0.0;
+    _selectedCellBorderWidth = 0.0;
+    _colorCellBorder = UIColor.clearColor;
+    _colorSelectedCellBorder = UIColor.clearColor;
     
     
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc] init];
     _nibName = @"CategoryCollectionViewCell";
     
-    if (self.cellSelectionType == SINGLE) {
+    if (selectionType == SINGLE) {
        [self setAllowsMultipleSelection:NO];
     }
     else {
