@@ -11,8 +11,10 @@
 @protocol CustomGridViewDelegate <NSObject>
 @optional
 -(void)didSelectRowAtIndexPath:(NSIndexPath*)indexPath object:(id)gridObject;
+-(void)didDeselectRowAtIndexPath:(NSIndexPath*)indexPath object:(id)gridObject;
 -(void)pageControlValue:(int)pageControlValue;
 -(void)didSelectRowAtIndexPath:(NSIndexPath*)indexPath;
+-(void)didDeselectRowAtIndexPath:(NSIndexPath*)indexPath;
 -(void)cellSelected:(id)object;
 
 @end

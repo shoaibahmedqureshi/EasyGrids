@@ -193,6 +193,12 @@
 
 -(void) collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
     
+    if([self.customGridViewDelegate respondsToSelector:@selector(didDeselectRowAtIndexPath:)])
+        [self.customGridViewDelegate didDeselectRowAtIndexPath:indexPath];
+    
+    if([self.customGridViewDelegate respondsToSelector:@selector(didDeselectRowAtIndexPath:object:)])
+        [self.customGridViewDelegate didDeselectRowAtIndexPath:indexPath object:self];
+    
     CategoryCollectionViewCell *cell = (CategoryCollectionViewCell*) [collectionView cellForItemAtIndexPath:indexPath];
     [cell.layer setBorderWidth:_cellBorderWidth];
     [cell.layer setBorderColor:_colorCellBorder.CGColor];
