@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://www.facebook.com/shoaib.ahmed.923"
   s.license      = "MIT"
   s.author       = {"Shoaib Ahmed Qureshi" => "shoaib.elastica@gmail.com" }
-  s.source       = {:git => "https://github.com/shoaibahmedqureshi/EasyGrids.git",:branch => "master",:tag => "1.0.20"}
+  s.source       = {:git => "https://github.com/shoaibahmedqureshi/EasyGrids.git",:branch => "master",:tag => "2.0.0"}
   s.requires_arc = true
   s.ios.deployment_target = "10.0"
   s.public_header_files = "**/*.h"
