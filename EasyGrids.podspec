@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "EasyGrids"
-  s.version      = "1.0.0"
+  s.version      = "2.0.0"
   s.summary      = "EasyGrids is a control to create photo collections and grids easy"
   s.homepage     = "https://www.facebook.com/shoaib.ahmed.923"
   s.license      = "MIT"
