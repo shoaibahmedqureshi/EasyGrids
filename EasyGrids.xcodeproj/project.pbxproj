@@ -22,6 +22,7 @@
 		0CF8D90720A011B700382FC4 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B1211FDCE6AE003DFA2A /* MBProgressHUD.h */; };
 		0CF8D90820A011CA00382FC4 /* UtilitiesHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B1131FDCE48D003DFA2A /* UtilitiesHelper.h */; };
 		0CF8D90920A011D000382FC4 /* CategoryCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4B11D1FDCE4D2003DFA2A /* CategoryCollectionViewCell.h */; };
+		A6FE36312185A4E20030121D /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FE36302185A4E20030121D /* SDWebImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		0CF4B11E1FDCE4D2003DFA2A /* CategoryCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryCollectionViewCell.m; sourceTree = "<group>"; };
 		0CF4B1211FDCE6AE003DFA2A /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		0CF4B1221FDCE6B3003DFA2A /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A6FE36302185A4E20030121D /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6FE36312185A4E20030121D /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 				0CF4B0FA1FDCE3B8003DFA2A /* EasyGrids */,
 				0CF4B1051FDCE3B8003DFA2A /* EasyGridsTests */,
 				0CF4B0F91FDCE3B8003DFA2A /* Products */,
+				A6FE362F2185A4E20030121D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +138,14 @@
 				0CF4B1221FDCE6B3003DFA2A /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		A6FE362F2185A4E20030121D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6FE36302185A4E20030121D /* SDWebImage.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,7 +414,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "/Users/shoaibahmedqureshi/Documents/EasyGrids/**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/shoaibahmedqureshi/Documents/EasyGrids/**",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = EasyGrids/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -425,7 +440,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "/Users/shoaibahmedqureshi/Documents/EasyGrids/**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/shoaibahmedqureshi/Documents/EasyGrids/**",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = EasyGrids/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
