@@ -7,6 +7,7 @@
 
 #import "CategoryCollectionViewCell.h"
 #import "UtilitiesHelper.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @implementation CategoryCollectionViewCell
 
@@ -54,33 +55,34 @@
 {
    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),
                    ^{
-                       dispatch_async(dispatch_get_main_queue(), ^{
-                           UIImage *image = [[UIImage alloc] init];
-                           image = [UIImage imageNamed:item.placeholder];
-                           imageView.image = image;
+//                       dispatch_async(dispatch_get_main_queue(), ^{
+//                           UIImage *image = [[UIImage alloc] init];
+//                           image = [UIImage imageNamed:item.placeholder];
+//                           imageView.image = image;
+//                       
+//                       });
                        
-                       });
+//                       NSURL *imageURL = [NSURL URLWithString:item.imageUrl];
+//                       NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+//
+                       [imageView sd_setImageWithURL:[NSURL URLWithString:item.imageUrl]
+                                    placeholderImage:[UIImage imageNamed:item.placeholder]];
                        
-                       NSURL *imageURL = [NSURL URLWithString:item.imageUrl];
-                       NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-                       
-                      
-                       
-                       //This is your completion handler
-                       dispatch_async(dispatch_get_main_queue(), ^{
-                           //If self.image is atomic (not declared with nonatomic)
-                           // you could have set it directly above
-                           UIImage *image  = [UIImage imageWithData:imageData];
-                           
-                           if (image != nil) {
-                              imageView.image = image;
-                           }
-                           [UtilitiesHelper removeActivityIndicatorToView:_feedImage];
-                           //This needs to be set here now that the image is downloaded
-                           // and you are back on the main thread
-                          
-                           
-                       });
+//                       //This is your completion handler
+//                       dispatch_async(dispatch_get_main_queue(), ^{
+//                           //If self.image is atomic (not declared with nonatomic)
+//                           // you could have set it directly above
+//                           UIImage *image  = [UIImage imageWithData:imageData];
+//
+//                           if (image != nil) {
+//                              imageView.image = image;
+//                           }
+//                           [UtilitiesHelper removeActivityIndicatorToView:_feedImage];
+//                           //This needs to be set here now that the image is downloaded
+//                           // and you are back on the main thread
+//
+//
+//                       });
                    });
     
     //Any code placed outside of the block will likely
