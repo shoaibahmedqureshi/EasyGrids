@@ -27,6 +27,32 @@ For Objective-C it can be integrated directly as it is written in Objective-C ho
 
 A quick example for swift users is https://github.com/shoaibahmedqureshi/EasyGridsExample
 
+#### Carthage
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+
+```bash
+$ brew update
+$ brew install carthage
+```
+
+Create cartfile using
+```
+touch cartfile
+```
+To integrate EasyGrids into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```
+github "shoaibahmedqureshi/EasyGrids"
+```
+
+Run `carthage` to build the framework by 
+```ogdl
+carthage update --platform iOS
+```
+and drag the built `EasyGrids.framework` into your Xcode project's Embedded Binaries.
+
 ## Quick Guide
 
 Just Integrate this control manually or through cocoapods and implement as below.
