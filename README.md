@@ -30,6 +30,7 @@ A quick example for swift users is https://github.com/shoaibahmedqureshi/EasyGri
 ## Quick Guide
 
 Just Integrate this control manually or through cocoapods and implement as below.
+#### Swift
 ```Swift
 class ViewController: UIViewController , CustomGridViewDelegate {
     
@@ -121,6 +122,7 @@ class ViewController: UIViewController , CustomGridViewDelegate {
     
 }
 ```
+#### Objective C
 ```Objective C
 CGRect frame = CGRectMake(self.view.frame.origin.x, yPos, self.view.frame.size.width, self.view.frame.size.height - 100);
 
