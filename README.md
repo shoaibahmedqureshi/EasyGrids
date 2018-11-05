@@ -27,6 +27,15 @@ For Objective-C it can be integrated directly as it is written in Objective-C ho
 
 A quick example for swift users is https://github.com/shoaibahmedqureshi/EasyGridsExample
 
+#### Manual
+Alternatively you can directly add the source files to your project.
+
+Download the latest code version or add the repository as a git submodule to your git-tracked project.
+
+Open your project in Xcode, then drag and drop EasyGrid folder onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project.
+
+Include EasyGrids wherever you need it with #import EasyGrids (Swift) or #import <EasyGrids/EasyGrids.h> (Objective C)
+
 ## Quick Guide
 
 Just Integrate this control manually or through cocoapods and implement as below.
