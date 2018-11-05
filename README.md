@@ -30,6 +30,7 @@ A quick example for swift users is https://github.com/shoaibahmedqureshi/EasyGri
 ## Quick Guide
 
 Just Integrate this control manually or through cocoapods and implement as below.
+#### Swift
 ```Swift
 class ViewController: UIViewController , CustomGridViewDelegate {
     
@@ -120,3 +121,31 @@ class ViewController: UIViewController , CustomGridViewDelegate {
     
     
 }
+```
+#### Objective C
+```Objective C
+CGRect frame = CGRectMake(self.view.frame.origin.x, yPos, self.view.frame.size.width, self.view.frame.size.height - 100);
+
+galleryView = [[CustomGridView alloc] initWithFrame:frame andScrollDirection:UICollectionViewScrollDirectionHorizontal selectionType:SINGLE];
+galleryView.backgroundColor = [UIColor clearColor];
+galleryView.customGridViewDelegate = self;
+
+ItemDetail *item = [[ItemDetail alloc] init];
+item.itemId = @"1";
+item.imageUrl = @"https://image.flaticon.com/sprites/new_packs/145841-avatar-set.png";
+item.placeholder = @"resize";
+
+NSInteger totalItem = 20;
+NSMutableArray *array = [NSMutableArray new];
+for (NSInteger i = 0; i < totalItem; i++) {
+[array addObject:item];
+}
+galleryView.arrayGridObjects = array;
+
+CGFloat cellRatio = ([[UIScreen mainScreen] bounds].size.width - 9) / 3;
+CGSize cellSize = CGSizeMake(cellRatio, cellRatio);
+galleryView.cellSize = cellSize;
+
+[self.view addSubview:galleryView];
+[galleryView reloadGrid];
+```
